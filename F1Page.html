@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Eye</title>
+
+    <link rel="stylesheet" href="./assets/css/F1Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- LOGO -->
+        <div id="logo">Sports Eye</div>
+
+        <!-- Navigation Bar -->
+        <div id="navbar" class="navBkgn">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./F1Page.html">FORMULA 1</a></li>
+                <li><a href="./MLB.html">MLB</a></li>
+                <li><a href="#">NEWS</a></li>
+                <!-- Login Button -->
+                <li id="login"><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+        <div id="theme">
+            <!-- Icons -->
+            <div id="icons">
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                <a href="#"> <i class="fa-solid fa-comment"></i></a>
+                <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+                <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
+                <a href="#"><i id="settingsGear" class="fa-solid fa-gear"></i></a>
+            </div>
+            <div id="popup-container" class="popup-container">
+
+                <h1 class="settingsTitle">Settings:</h1>
+                <!-- Add your settings content here -->
+                <button class="settingsBtn darkModeToggle" id="toggle-btn">Dark Mode</button>
+                <button class="settingsBtn" id="closeSettings" onclick="closeSettings()">Close</button>
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+    </div>
+
+    <!-- Image -->
+    <div id="image">
+        <img src="./assets/images/F1-Ferrari-PNG-Transparent.png" alt="Formula One Red Ferrari Car">
+    </div>
+    </div>
+
+    <!-- <div class="image-container">
+        <img src="./assets/images/F1-Ferrari-PNG-Transparent.png" alt="Formula One Red Ferrari Car">
+>
+      </div> -->
+
+    <!-- Formula 1 Data -->
+
+    <button id="driversStandingsButton" class="ButtonShadow" onclick="getDriversStandings()">Get Drivers
+        Standings</button>
+    <div id="driversStandings" class="centered-list"></div>
+
+    <script src="https://kit.fontawesome.com/cb7a1ab1f9.js" crossorigin="anonymous"></script>
+    <script src="assets/js/f1.js"></script>
+</body>
+
+</html>
